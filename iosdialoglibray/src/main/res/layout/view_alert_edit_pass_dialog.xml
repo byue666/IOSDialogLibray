@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/lLayout_bg"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/alert_dialog_bg"
+              android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dimen_88_dip"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_88_dip"
+            android:layout_marginRight="@dimen/dimen_88_dip"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_46_dip"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_120_dip"
+        android:layout_marginTop="@dimen/dimen_66_dip"
+        android:layout_marginRight="@dimen/dimen_120_dip"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_ok"
+            android:layout_width="@dimen/dimen_42_dip"
+            android:layout_height="@dimen/dimen_46_dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dimen_12_dip"
+            android:src="@mipmap/dialog_lock"/>
+
+        <EditText
+            android:id="@+id/edit_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:gravity="left"
+            android:paddingLeft="@dimen/dimen_88_dip"
+            android:paddingTop="@dimen/dimen_36_dip"
+            android:paddingRight="@dimen/dimen_36_dip"
+            android:paddingBottom="@dimen/dimen_36_dip"
+            android:password="true"
+            android:textColor="@color/black"
+            android:textCursorDrawable="@drawable/bg_edit_cursor"
+            android:textSize="@dimen/dimen_46_dip"/>
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_2_dip"
+            android:layout_below="@+id/edit_msg"
+            android:background="#f16e5c"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="@dimen/dimen_88_dip"
+        android:background="@color/line_default_color"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_128_dip"
+        android:layout_marginTop="@dimen/dimen_56_dip"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_neg"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/alert_dialog_left_selector"
+            android:gravity="center"
+            android:textColor="@color/action_sheet_grey"
+            android:textSize="@dimen/dimen_46_dip"/>
+
+        <ImageView
+            android:id="@+id/img_line"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_default_color"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_pos"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/alert_dialog_right_selector"
+            android:gravity="center"
+            android:textColor="@color/action_sheet_org"
+            android:textSize="@dimen/dimen_46_dip"/>
+    </LinearLayout>
+
+</LinearLayout>
